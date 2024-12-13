@@ -57,3 +57,12 @@ class Store {
       return this.inventory.find(product => product.name === name) || null;
     }
   }
+
+  // Part 5: Testing the System
+  const store = new Store();
+
+  const product1 = new ProductProperties("MacBook", 2500, 5);
+  const product2 = new ProductProperties("iPhone 16", 1500, 10);
+  const perishable1 = new PerishableProductProperties("Milk", 3, 50, "2024-12-31");
+  const perishable2 = new PerishableProductProperties("Eggs", 2.5, 100, "2024-12-25");
+  const product3 = new ProductProperties("Airpods", 200, 20);
