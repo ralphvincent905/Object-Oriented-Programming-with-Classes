@@ -76,3 +76,11 @@ class Store {
   ProductUtils.applyDiscount(store.inventory, 0.15);
 
   console.log("Total Inventory Value (After Discount):", `$${store.getInventoryValue().toFixed(2)}`);
+
+  const searchName = "Macbook";
+const foundProduct = store.findProductByName(searchName);
+if (foundProduct) {
+  console.log("Product Found:", foundProduct.toString());
+} else {
+  console.log(`Product "${searchName}" not found.`);
+}
