@@ -83,9 +83,9 @@ class Store {
 
   // Find and print the details of a specific product by its name
   const searchName = "Macbook";
-const foundProduct = store.findProductByName(searchName);
-if (foundProduct) {
-  console.log("Product Found:", foundProduct.toString());
-} else {
-  console.log(`Product "${searchName}" not found.`);
+  const foundProduct = store.findProductByName(searchName);
+  if (foundProduct) {
+    console.log("Product Found:", foundProduct.toString());
+}   else {
+    console.log(`Product "${searchName}" not found.`);
 }
