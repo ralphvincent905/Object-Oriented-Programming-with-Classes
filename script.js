@@ -37,8 +37,6 @@ class ProductUtils {
     }
   }
 
-ProductUtils.applyDiscount(store.inventory, 0.10);
-
 // Part 4: Store Management
 class Store {
     constructor() {
@@ -74,3 +72,5 @@ class Store {
   store.addProduct(product3);
 
   console.log("Total Inventory Value (Before Discount):", `$${store.getInventoryValue().toFixed(2)}`);
+
+  ProductUtils.applyDiscount(store.inventory, 0.15);
