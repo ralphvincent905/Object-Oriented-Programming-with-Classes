@@ -82,7 +82,7 @@ class Store {
   console.log("Total Inventory Value (After Discount):", `$${store.getInventoryValue().toFixed(2)}`);
 
   // Find and print the details of a specific product by its name
-  const searchName = "Macbook";
+  const searchName = "MacBook";
   const foundProduct = store.findProductByName(searchName);
   if (foundProduct) {
     console.log("Product Found:", foundProduct.toString());
