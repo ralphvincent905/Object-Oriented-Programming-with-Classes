@@ -65,18 +65,23 @@ class Store {
   const perishable2 = new PerishableProductProperties("Eggs", 2.5, 100, "2024-12-25");
   const product3 = new ProductProperties("Airpods", 200, 20);
 
+  // Adding the products to the store
   store.addProduct(product1);
   store.addProduct(product2);
   store.addProduct(perishable1);
   store.addProduct(perishable2);
   store.addProduct(product3);
 
+  // Print Total Inventory Value before the 15% discount
   console.log("Total Inventory Value (Before Discount):", `$${store.getInventoryValue().toFixed(2)}`);
 
+  // Product discount
   ProductUtils.applyDiscount(store.inventory, 0.15);
 
+  // Print Total Inventory Value after the 15% discount
   console.log("Total Inventory Value (After Discount):", `$${store.getInventoryValue().toFixed(2)}`);
 
+  // Find and print the details of a specific product by its name
   const searchName = "Macbook";
 const foundProduct = store.findProductByName(searchName);
 if (foundProduct) {
