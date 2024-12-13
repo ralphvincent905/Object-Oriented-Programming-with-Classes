@@ -66,3 +66,9 @@ class Store {
   const perishable1 = new PerishableProductProperties("Milk", 3, 50, "2024-12-31");
   const perishable2 = new PerishableProductProperties("Eggs", 2.5, 100, "2024-12-25");
   const product3 = new ProductProperties("Airpods", 200, 20);
+
+  store.addProduct(product1);
+  store.addProduct(product2);
+  store.addProduct(perishable1);
+  store.addProduct(perishable2);
+  store.addProduct(product3);
