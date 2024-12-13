@@ -26,3 +26,15 @@ class PerishableProductProperties extends ProductProperties {
       return `${super.toString()}, Expiration Date: ${this.expirationDate}`;
     }
   }
+
+
+// Part 3: Static Methods and Properties
+class ProductUtils {
+    static applyDiscount(products, discount) {
+      products.forEach(product => {
+        product.price -= product.price * discount;
+      });
+    }
+  }
+
+ProductUtils.applyDiscount(store.inventory, 0.10);
