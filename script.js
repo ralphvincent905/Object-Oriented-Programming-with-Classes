@@ -72,3 +72,5 @@ class Store {
   store.addProduct(perishable1);
   store.addProduct(perishable2);
   store.addProduct(product3);
+
+  console.log("Total Inventory Value (Before Discount):", `$${store.getInventoryValue().toFixed(2)}`);
