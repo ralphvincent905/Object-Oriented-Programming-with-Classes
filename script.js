@@ -74,3 +74,5 @@ class Store {
   console.log("Total Inventory Value (Before Discount):", `$${store.getInventoryValue().toFixed(2)}`);
 
   ProductUtils.applyDiscount(store.inventory, 0.15);
+
+  console.log("Total Inventory Value (After Discount):", `$${store.getInventoryValue().toFixed(2)}`);
